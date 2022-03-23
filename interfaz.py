@@ -20,7 +20,7 @@ class interfaz:
         self.btn.place(x=710,y=201, width=150, height=35)
         
         self.labelTitulo2=tk.Label(self.ventana, text="Resultado", width=64, height=1,  background="#2A5F61", foreground="#FCF9F9", font=("Arial", 15,)).place(x=208,y=300, width=600)
-        self.cuadro=tk.Label(self.ventana, background="#9AA8A8", highlightbackground="#2A5F61",highlightthickness =1, bd=0).place(x=208,y=329, width=600, height=160)
+        self.cuadro=tk.Label(self.ventana, background="#D5E6DD", highlightbackground="#2A5F61",highlightthickness =1, bd=0).place(x=208,y=329, width=600, height=160)
        
         self.btnUdate=tk.Button(self.ventana, text="Limpiar",background="#2A5F61", foreground="#FCF9F9", font=("Arial", 14))
         self.btnUdate.place(x=298,y=520, width=180, height=30)
