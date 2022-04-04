@@ -51,9 +51,9 @@ class interfaz:
             resultado = automata.respuesta()
 
             if resultado.eliminar() == 'Cumple':
-                tk.Label(self.ventana, text="Si Cumple", width=64, height=1,  background="#2A5F61", foreground="#FCF9F9", font=("Arial", 15,)).place(x=210,y=300, width=600)
+                self.mensaje=tk.Label(self.ventana, text="Si Cumple", width=64, height=1,  background="#9AA8A8", foreground="#FCF9F9", font=("Arial", 30,)).place(x=210,y=380, width=600)
             else:
-                tk.Label(self.ventana, text="No Cumple", width=64, height=1,  background="#2A5F61", foreground="#FCF9F9", font=("Arial", 15,)).place(x=210,y=300, width=600)
+                self.mensaje2=tk.Label(self.ventana, text="No Cumple", width=64, height=1,  background="#9AA8A8", foreground="#FCF9F9", font=("Arial", 30,)).place(x=210,y=380, width=600)
 
 
 

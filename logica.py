@@ -114,8 +114,8 @@ class Logica:
                     self.final(posicion)
             
             elif subcadena[0] == list_Metodos[4]:
-                pila.error(list_Metodos[4] + '(' + GRAMATICA3 + ')')
-                decision = re.search(GRAMATICA3,subcadena2[1])
+                pila.error(list_Metodos[4] + '(' + GRAMATICA4 + ')')
+                decision = re.search(GRAMATICA4,subcadena2[1])
                 print(decision)
                 if  decision is None:
                     pila.error('-')
@@ -149,11 +149,9 @@ class Logica:
                     pila.MostrarPila()
                     self.final(posicion)
                 else:
-                    posicion = 0
-                    pila.eliminar()
-                    pila.MostrarPila()
-                    self.final(posicion)
-            
+                    pila.error('-')
+                    print('Valor Incorrecto: ', valor)
+                    
             elif subcadena[0] == list_Metodos[7]:
                 pila.error(list_Metodos[7] + '(' ')')
                 decision = re.search(PALABRAS,subcadena2[1])
